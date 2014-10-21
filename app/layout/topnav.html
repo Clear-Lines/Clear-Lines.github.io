@@ -21,14 +21,19 @@
         <div class="container" data-toggle="clingify">
             <div class="navbar">
                 <!--
-                mobile collapse menu button
+                mobile collapse menu button 2
                 - data-toggle="toggle" = default BS menu
                 - data-toggle="jpanel-menu" = jPanel Menu
                 -->
-                <a class="navbar-btn" data-toggle="jpanel-menu" data-target=".navbar-collapse"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </a>
+                <a class="navbar-btn" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed"> 
+                    <span class="bar"></span> 
+                    <span class="bar"></span> 
+                    <span class="bar"></span> 
+                    <span class="bar"></span> 
+                </a>
 
                 <!--everything within this div is collapsed on mobile-->
-                <div class="navbar-collapse collapse">
+                <div class="navbar-collapse collapse" ng-class="{'in':!navCollapsed}">
 
                     <!--main navigation-->
                     <ul class="nav navbar-nav">
