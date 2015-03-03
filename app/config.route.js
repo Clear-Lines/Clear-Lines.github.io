@@ -22,13 +22,13 @@
             {
                 url: '/',
                 config: {
+                    title: 'Home',
                     templateUrl: 'app/site/dashboard.html',
-                    title: 'Home | [some more details]',
                 }
             }, {
                 url: '/team',
                 config: {
-                    title: 'team',
+                    title: 'Team',
                     templateUrl: 'app/site/team.html',
                 }
 
