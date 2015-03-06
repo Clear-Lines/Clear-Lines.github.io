@@ -22,13 +22,13 @@
             {
                 url: '/',
                 config: {
-                    title: 'Home',
+                    title: 'Home | Data Science & Software Architecture Solutions',
                     templateUrl: 'app/site/dashboard.html',
                 }
             }, {
                 url: '/team',
                 config: {
-                    title: 'Team',
+                    title: 'Team | Data Science & Software Architecture Solutions',
                     templateUrl: 'app/site/team.html',
                 }
 
