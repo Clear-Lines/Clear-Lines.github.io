@@ -44,6 +44,11 @@
                 config: {
                     title: 'customers',
                     templateUrl: 'app/site/customers.html',
+                }, {
+                url: '/blog',
+                config: {
+                    title: 'blog',
+                    templateUrl: 'app/site/customers.html',
                 }
 
             }
