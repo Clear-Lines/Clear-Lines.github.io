@@ -22,24 +22,23 @@
             {
                 url: '/',
                 config: {
-                    title: 'Home | Data Science & Software Architecture Solutions',
-                    templateUrl: 'app/site/dashboard.html',
-                }
-            }, {
+                            title: 'Home | Data Science & Software Architecture Solutions',
+                            templateUrl: 'app/site/dashboard.html',
+                        }
+            }, 
+            {
                 url: '/team',
                 config: {
                     title: 'Team | Data Science & Software Architecture Solutions',
                     templateUrl: 'app/site/team.html',
-                }
-
-            }, {
+                        }
+            }, 
+            {
                 url: '/blog',
                 config: {
-                    title: 'about',
-                    templateUrl: 'app/site/about.html',
-                }
-            }
-
+                            title: 'about',
+                            templateUrl: 'app/site/about.html',
+                        }
             }
         ];
     }
