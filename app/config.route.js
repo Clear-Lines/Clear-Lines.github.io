@@ -38,8 +38,6 @@
                     title: 'about',
                     templateUrl: 'app/site/about.html',
                 }
-
-            }
             }
 
             }
