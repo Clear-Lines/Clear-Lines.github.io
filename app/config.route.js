@@ -33,23 +33,14 @@
                 }
 
             }, {
-                url: '/about',
+                url: '/blog',
                 config: {
                     title: 'about',
                     templateUrl: 'app/site/about.html',
                 }
 
-            }, {
-                url: '/customers',
-                config: {
-                    title: 'customers',
-                    templateUrl: 'app/site/customers.html',
-                }, {
-                url: '/blog',
-                config: {
-                    title: 'blog',
-                    templateUrl: 'app/site/customers.html',
-                }
+            }
+            }
 
             }
         ];
