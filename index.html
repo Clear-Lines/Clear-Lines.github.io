@@ -1,85 +1,119 @@
-﻿<!DOCTYPE html>
-<html data-ng-app="app">
-<head>
-    <style>
-        /* This helps the ng-show/ng-hide animations start at the right place. */
-        /* Since Angular has this but needs to load, this gives us the class early. */
-        .ng-hide {
-            display: none !important;
-        }
-    </style>
-    <title data-ng-bind="title"></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- @todo: fill with your company info or remove -->
-    <meta name="description" content="Clear Lines Consulting | (415) 830-3280 | contact@clear-lines.com">
-    <meta name="author" content="clear-lines.com">
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<!DOCTYPE html>
+<html>
 
-    <script>
-        // Must be first. IE10 mobile viewport fix
-        if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
-            var msViewportStyle = document.createElement("style");
-            var mq = "@-ms-viewport{width:auto!important}";
-            msViewportStyle.appendChild(document.createTextNode(mq));
-            document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
-        }
-    </script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clear Lines Consulting</title>
+    <link rel="stylesheet" href="css/bulma.css">
+  </head>
 
-    <link href="content/ie10mobile.css" rel="stylesheet" />
-    <link href="content/bootstrap.min.css" rel="stylesheet" />
-    <link href="content/font-awesome.min.css" rel="stylesheet" />
-    <link href="content/toastr.css" rel="stylesheet" />
-    <link href="content/theme-style.1.0.css" rel="stylesheet">
-    <link href="content/styles.css" rel="stylesheet" />
-    <!-- HTML5 shiv & respond.js for IE6-8 support of HTML5 elements & media queries -->
-    <!--[if lt IE 9]>
-          <script src="plugins/html5shiv/dist/html5shiv.js"></script>
-          <script src="plugins/respond/respond.min.js"></script>
-        <![endif]-->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300|Rambla|Calligraffitti' rel='stylesheet' type='text/css'>
-</head>
-<body>
-    <div data-ng-include="'/app/layout/shell.html'"></div>
+  <body>
 
-    <!-- Vendor Scripts -->
-    <script src="scripts/jquery-2.1.1.js"></script>
-    <script src="scripts/angular.js"></script>
-    <script src="scripts/angular-animate.js"></script>
-    <script src="scripts/angular-route.js"></script>
-    <script src="scripts/angular-sanitize.js"></script>
-    <script src="scripts/bootstrap.js"></script>
-    <script src="scripts/toastr.js"></script>
-    <script src="scripts/moment.js"></script>
-    <script src="scripts/ui-bootstrap-tpls-0.10.0.js"></script>
-    <script src="scripts/spin.js"></script>
-    <script src="scripts/plugins/retina/js/retina-1.1.0.min.js"></script>
-    
-    <!-- Bootstrapping -->
-    <script src="app/app.js"></script>
-    <script src="app/config.js"></script>
-    <script src="app/config.exceptionHandler.js"></script>
-    <script src="app/config.route.js"></script>
+    <section class="hero is-dark">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Clear Lines Consulting
+          </h1>
+        </div>
+      </div>
+    </section>
 
-    <!-- common Modules -->
-    <script src="app/common/common.js"></script>
-    <script src="app/common/logger.js"></script>
-    <script src="app/common/spinner.js"></script>
+    <section class="section">
+      <div class="columns">
+        
+        <div class="column is-one-third">
+          <section class="section">
+            <h1 class="title">What we do</h1>
+            <div class="box">
+              <p>Our team offers a unique blend of software engineering and quantitative analysis skills. 
+                We have years of experience developing <strong>.NET and Azure solutions</strong>, delivering 
+                <strong>Service-Oriented Architectures</strong> for a variety of clients across industries, and 
+                we can help you design scalable, maintainable and reliable solutions for your business. 
+                We also offer <strong>training and mentoring</strong> around <strong>Data Science and Machine Learning using F#</strong>.
+              </p>
+              <br>
+                <p>Interesting in learning more? Contact us at <strong>info@clear-lines.com</strong></p>
+            </div>
+          </section>
+        </div>
 
-    <!-- common.bootstrap Modules -->
-    <script src="app/common/bootstrap/bootstrap.dialog.js"></script>
+        <div class="column">
+          <section class="section">
+            <h1 class="title">The team</h1>
+            
+              <section class="media box">
+                <figure class="media-left">
+                  <p class="image is-128x128">
+                    <img src="images/mathias-brandewinder.jpg" alt="Mathias Brandewinder">
+                  </p>
+                </figure>
+                <div class="media-content">
+                  <h2 class="subtitle">Mathias Brandewinder</h2>
+                  <p>
+                    Mathias Brandewinder enjoys solving challenging business 
+                    problems with software engineering and applied mathematics 
+                    techniques, and some creativity. 
+                    His current focus is on functional programming with F#, 
+                    machine learning and data science, and on putting them together 
+                    to help companies make smarter decisions with their data. 
+                    He loves teaching and mentoring, and is a regular speaker 
+                    at conferences and community events all over the world. 
+                    A former Microsoft F# MVP, he holds a MS in Operations Research 
+                    from Stanford, a MS in Economics from University of Paris X, 
+                    and a MBA from ESSEC.           
+                  </p>
+                  <br>
+                  <div class="buttons">
+                    <a class="button is-link" href="https://twitter.com/brandewinder">Twitter</a>
+                    <a class="button is-link" href="https://www.linkedin.com/in/brandewinder">LinkedIn</a>
+                    <a class="button is-link" href="https://brandewinder.com">Blog</a>
+                  </div>
+                </div>
+              </section>
 
-    <!-- app -->
-    <script src="app/site/dashboard.js"></script>
-    <script src="app/site/team.js"></script>
-    <script src="app/site/about.js"></script>
-    <script src="app/site/customers.js"></script>
-    <script src="app/layout/shell.js"></script>
+              <section class="media box">
+                <figure class="media-left">
+                  <p class="image is-128x128">
+                    <img src="images/petar-vucetin.jpg" alt="Petar Vucetin">
+                  </p>
+                </figure>
+                <div class="media-content">
+                  <h2 class="subtitle">Petar Vucetin</h2>
+                  <p>
+                    Petar Vucetin is a veteran solution architect specializing in 
+                    line-of-business SOA applications. He has built distributed 
+                    systems and applications for over twenty years, and was the 
+                    chief architect of a Fortune 500 company in the publishing 
+                    industry. He has worked in manufacturing, financial, large scale 
+                    retail, and other industries from which he draws his 
+                    inspiration to deliver big-picture solutions for customers, 
+                    often escorting them from initial architecture and project 
+                    design through delivery as a virtual architect. Throughout his 
+                    career, he has mentored teams and business leaders, often 
+                    transforming and recovering projects, setting them back on time 
+                    and on budget. He continues to pursue his passions in 
+                    practicing solutions architecture as well as having fun building 
+                    micro-controllers and utilizing them in connected systems.           
+                  </p>
+                  <br>
+                  <div class="buttons">
+                    <a class="button is-link" href="https://www.linkedin.com/in/petarvucetin">LinkedIn</a>
+                  </div>
+                </div>
+              </section>
+          </section>
 
-    <!-- app Services -->
-    <script src="app/services/datacontext.js"></script>
-    <script src="app/services/directives.js"></script>
+        </div>
+      </div>
+    </section>
 
-</body>
+    <footer class="footer is-dark">
+      <div class="content has-text-centered">
+        <p>&copy; 2020 Clear Lines Consulting</p>
+      </div>
+    </footer>
+
+  </body>
 </html>
