@@ -34,6 +34,33 @@
   src: url('../fonts/abril-fatface-v25-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* eb-garamond-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/eb-garamond-v31-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* eb-garamond-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/eb-garamond-v31-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* eb-garamond-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/eb-garamond-v31-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 /*!
  * Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -65,8 +92,8 @@ body {
   top: 0;
   padding-top: 30px;
   padding-bottom: 30px;
-  background: #000;
-  color: #fff;
+  background: #fff;
+  color: #000;
   border-bottom-style: solid;
   border-bottom-color:grey;
   border-bottom-width: 1px;
@@ -83,8 +110,8 @@ h1.logo {
   padding-left: max(50px, 20%);
 }
 
-h1 { font-family: "Abril Fatface", serif; }
-h2 { font-family: "Abril Fatface", serif; }
-h3 { font-family: "Abril Fatface", serif; }
+h1 { font-family: "EB Garamond", serif; }
+h2 { font-family: "EB Garamond", serif; }
+h3 { font-family: "EB Garamond", serif; }
 p { line-height: 1.5; }
 b { font-weight: 900; }
